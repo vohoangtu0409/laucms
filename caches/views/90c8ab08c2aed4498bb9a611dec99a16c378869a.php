@@ -1,0 +1,1 @@
+<H1>Hoang TU</H1><?php /**PATH C:\laragon\www\nina\resources\views/index.blade.php ENDPATH**/ ?>

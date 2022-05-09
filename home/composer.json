@@ -1,0 +1,23 @@
+{
+    "name": "vohoangtu/kodingmvc",
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/Application",
+            "System\\": "src/System",
+            "App\\": "App"
+        }
+    },
+    "authors": [
+        {
+            "name": "HoangTu",
+            "email": "vohoangtu0409@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "*",
+        "league/flysystem": "*",
+        "illuminate/view": "*",
+        "symfony/http-foundation": "*",
+        "symfony/asset": "*"
+    }
+}

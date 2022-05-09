@@ -1,0 +1,21 @@
+{
+    "name": "kodingmen/ninasource",
+    "authors": [
+        {
+            "name": "HoangTu",
+            "email": "koding.men@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/view": "^5.8",
+        "illuminate/database": "^5.8",
+        "symfony/var-dumper": "^4.4",
+        "symfony/http-foundation": "*",
+        "altorouter/altorouter": "^2.0"
+    }
+}
