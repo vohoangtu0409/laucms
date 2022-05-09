@@ -10,4 +10,5 @@ abstract class Kernel{
         view()->addNamespace($namespace, $hint);
     }
     abstract function register();
+    abstract function boot();
 }

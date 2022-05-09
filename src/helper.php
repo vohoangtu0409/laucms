@@ -19,3 +19,7 @@ function view() : \App\Services\View\BladeEngine{
 function request(){
     return app()->get('request');
 }
+
+function trans($key, $data = [], $locale = 'vi'){
+
+}

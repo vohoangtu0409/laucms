@@ -12,10 +12,10 @@
         }
     },
     "require": {
-        "illuminate/view": "^5.8",
-        "illuminate/database": "^5.8",
-        "symfony/var-dumper": "^4.4",
+        "illuminate/view": "*",
+        "illuminate/database": "*",
+        "symfony/var-dumper": "*",
         "symfony/http-foundation": "*",
-        "altorouter/altorouter": "^2.0"
+        "altorouter/altorouter": "*"
     }
 }

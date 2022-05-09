@@ -19,13 +19,14 @@ class Application{
     public function register(){
         $this->kernel->register();
     }
-    public function boot(){}
+    public function boot(){
+        $this->kernel->boot();
+    }
 
     public function run(){
+        $this->register();
+        $this->boot();
         $match = $this->container->get('router')->match();
-
-        $application = $this->kernel->handle($match);
-
         if(is_array($match)){
             if(is_callable($match['target'])){
                 call_user_func_array($match['target'], $match['params']);

@@ -11,7 +11,8 @@ $request->setSession($session);
 
 
 $view = new \App\Services\View\BladeEngine(
-    INDEX.DIRECTORY_SEPARATOR.'resources/views',INDEX.DIRECTORY_SEPARATOR.'caches/views');
+    INDEX.DIRECTORY_SEPARATOR.'resources/views',
+    INDEX.DIRECTORY_SEPARATOR.'caches/views');
 /* Template */
 
 
@@ -20,7 +21,7 @@ $db = new \Illuminate\Database\Capsule\Manager();
 $db->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'nina',
+    'database'  => 'laucms',
     'username'  => 'root',
     'password'  => '',
     'charset'   => 'utf8',
@@ -46,6 +47,7 @@ $router = new AltoRouter();
 
 $container->alias('request', \Symfony\Component\HttpFoundation\Request::class);
 $container->instance('request', $request);
+
 $container->instance('session', $session);
 $container->instance('db', $db);
 $container->instance('view', $view);
@@ -55,6 +57,4 @@ $app = new \App\Packages\Shared\Application(
     new \App\Packages\Home\HomeKernel(),
     $container
 );
-$app->register();
-$app->boot();
 $app->run();
