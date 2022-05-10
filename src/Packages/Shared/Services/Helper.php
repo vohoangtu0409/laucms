@@ -41,7 +41,7 @@ class Helper{
     }
 
     public function getLang(){
-        return 'vi';
+        return request()->getSession()->get('lang') ?: 'vi';
     }
 
     private function loadSetting($key){

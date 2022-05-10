@@ -1,5 +1,5 @@
 @php
-    dump($settings);
+    //dump($home, $settings, $session);
 @endphp
 <!doctype html>
 <html lang="en">
